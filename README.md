@@ -23,17 +23,25 @@ Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2w
 ###This work in done by:
 
   1-Abdullah Al-Nawfal
-    Laboratory Technologest as KFMC Molecular Pathology Section
-    Email:a.alnawfal.1992@gmail.com
+   
+   Laboratory Technologest as KFMC Molecular Pathology Section
+   
+   Email:a.alnawfal.1992@gmail.com
   
   2-Mohammed Moudhish
+    
     Laboratory Technologest as KFMC Molecular Pathology Section
+    
     Email:: Dr.mom@msn.com
+    
     GitHub Account: Momudhish 
   
 Under direct supervission of Dr. Mohammed Bamjboor  
+    
     Laboratory Consultant as KFMC Molecular Pathology Section
+    
     Email: m.bamajboor@gmail.com
+    
     GitHub Account: bamajboor 
 
 
