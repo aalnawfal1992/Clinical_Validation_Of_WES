@@ -19,3 +19,8 @@ positives, false negatives, and true positives.
 False positive variants may arise through sequencing and bioinformatics selection/filtering artefacts.
 The number of True Negative can’t exactly calculate but can be estimated to great accuracy. The estimation above 0.1% at most as per 
 Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2wDHcI/m/r_jGaW3ZAAAJ).
+
+###This work in done by :
+  1-Abdullah Al-Nawfal
+  2-Mohammed Moudhish
+Under direct supervission of Dr. Mohammed Bamjboor  
