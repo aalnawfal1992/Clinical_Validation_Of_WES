@@ -1,0 +1,9 @@
+Due to Chromosome notation different in different database you have to make suue that all the files used (Fasta, Bed and VCF) is in the same notation for example some time it's 
+
+written like Chr1 or simple 1, if you have the same issue plase use the below command as needed 
+
+#Remove Chr :
+awk '{gsub(/^chr/,""); print}' "InFile" > "OutFile"
+
+#Add Chr:
+awk '{if($0 !~ /^#/) print "chr"$0; else print $0}' "InFile" > "OutFile"
