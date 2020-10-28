@@ -1,6 +1,7 @@
 # Clinical_Validation_Of_WES
 #Pipeline to validate clinical whole exome using GIAB data set
-the Genome In A Bottle (GIAB) Consortium (https://www.nist.gov/programs-projects/genome-bottle) in conjunction with the National Institute of Standards and Technology have
+
+The Genome In A Bottle (GIAB) Consortium (https://www.nist.gov/programs-projects/genome-bottle) in conjunction with the National Institute of Standards and Technology have
 produced a series of high coverage reference genome in which SNP and INDEL locations are considered to be well characterized (True VCF file v3.3.2). USCS Human Reference genome
 (GRCh37/hg19) downloaded and processed by this pipeline using BWA-MEM (Version 0.7.17-r1188) for Alignments, Samtools (Version 1.10)/Picards-tools (2.23.8) for post-alignments
 processing and GATK (4.1.8.1) HapolcallerType for Variants calling (Query VCF file).
