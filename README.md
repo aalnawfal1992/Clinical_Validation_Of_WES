@@ -14,6 +14,7 @@ D.	True Negative (TN): Variants Not found in both True and Query VCF files
 RTG vcfeval command, which performs a sophisticated comparison of VCF files. RTG vcfeval performs variant comparison at the haplotype level; that is, it determines whether the
 genotypes asserted in the VCFs under comparison result in the same genomic sequence when applied to the reference genome. The RTG vcfeval output VCF files containing false
 positives, false negatives, and true positives.
+
 ##Analytical sensitivity or Limit of detection:
 False positive variants may arise through sequencing and bioinformatics selection/filtering artefacts.
 The number of True Negative can’t exactly calculate but can be estimated to great accuracy. The estimation above 0.1% at most as per 
