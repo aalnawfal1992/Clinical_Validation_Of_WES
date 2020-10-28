@@ -1,0 +1,30 @@
+#!/bin/bash
+## KFMC_Bioinformatics WES Pipeline
+###Basesed On BWA, SMATOOLS/Picard tools And GATK HaploCallerType
+####written By AM & MO Under Supervision of Dr.MB
+
+Batch_Id='/home/bioinformatics/Desktop/Validation_Batch1_11-10-2020' #Path to folder containe folder's samples
+
+ref='/home/bioinformatics/Genomics_Reference_Files/Human_Reference_Genome/UCSC/UCSC_Homo_Sapiens_GRCH37_hg19.fasta' #Path to reference genome
+bed='/home/bioinformatics/Genomics_Reference_Files/Human_Reference_Genome/UCSC/S04380110_Padded.bed' #Path to bed file
+for sample in "$Batch_Id"/*;
+do
+	if [ -d "$sample" ]
+	then
+		patirnt_MRN=$(basename "$sample")
+	date +%r
+	bwa mem -t 20 $ref "$sample"/*.gz > "$sample/$patirnt_MRN".sam
+	samtools view -@ 20 -bS "$sample/$patirnt_MRN".sam -o "$sample/$patirnt_MRN".bam
+	java -jar /home/bioinformatics/picard.jar AddOrReplaceReadGroups -I "$sample/$patirnt_MRN".bam -O "$sample/$patirnt_MRN"_WithRG.bam -RGID 4 -LB lib1 -PL ILLUMINA -PU unit1 -SM "$sample/$patirnt_MRN" -SO coordinate
+	java -jar /home/bioinformatics/picard.jar MarkDuplicates -I "$sample/$patirnt_MRN"_WithRG.bam -O "$sample/$patirnt_MRN"_PCRFree.bam -M "$sample/$patirnt_MRN"_Marked_Dup_Metrics.txt --REMOVE_DUPLICATES true
+	samtools index -@ 20 "$sample/$patirnt_MRN"_PCRFree.bam
+	java -jar /home/bioinformatics/gatk/gatk-package-4.1.8.1-local.jar HaplotypeCaller --native-pair-hmm-threads 20 -I "$sample/$patirnt_MRN"_PCRFree.bam -O "$sample/$patirnt_MRN".vcf -R $ref -L $bed
+	rm "$sample/$patirnt_MRN".sam
+	date +%r
+	
+	fi
+done
+
+
+exit 0 
+
