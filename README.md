@@ -24,7 +24,7 @@ Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2w
 
   1-Abdullah Al-Nawfal
    
-    Laboratory Technologest as KFMC Molecular Pathology Section
+    Laboratory Technologist as KFMC Molecular Pathology Section
    
     Email:a.alnawfal.1992@gmail.com
     
@@ -33,7 +33,7 @@ Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2w
   
   2-Mohammed Moudhish
     
-    Laboratory Technologest as KFMC Molecular Pathology Section
+    Laboratory Technologist as KFMC Molecular Pathology Section
     
     Email:: Dr.mom@msn.com
     
