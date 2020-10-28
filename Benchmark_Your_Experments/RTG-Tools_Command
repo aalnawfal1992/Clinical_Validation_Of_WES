@@ -1,0 +1,25 @@
+Run the following command:
+##Creat SDF File (From Fasta):
+
+java -jar RTG.jar format "ReferenceGenome".fasta -o "PathToOutPutSDFFiles"
+
+##Comparison:
+java -jar RTG.jar vcfeval -b "True".vcf.gz --bed-regions="HighConfi".bed.gz -c "Quary".vcf.gz --evaluation-regions="Quary".bed.gz -t "Path to SDF File" -o "PathWhereWeWantTheReultIn"
+ ##  "True".vcf.gz "HighConfi".bed.gz  from GIAB Data set
+
+Calculations: 
+False Positive ratio(FPR)= (False Positive)/(False Positive + True Negative) *100
+False Discovary Rate(FDR)= (False Positive)/(False Positive + True Positive) * 100
+True Positive ratio(TPR) Or Sensitivity= (True Positive)/(True Positive + False Negative) * 100
+True Negative ratio(TNR) Or Specificity= (True Negative)/(False Psoative + True Negative) * 100
+True Discovary rate(TDR) Or Precision = (True Positive)/(True Positive + False Positive) * 100
+Balanced Accuracy= ((TPR + TNR) / 2) * 100 
+
+## To Calculate True Negative Plase see (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2wDHcI/m/r_jGaW3ZAAAJ) for better understanding and use the below command:
+
+  cat "HighConfi".bed | awk -F'\t' 'BEGIN{SUM=0}{ SUM+=$3-$2} END{print SUM}'
+
+
+
+
+
