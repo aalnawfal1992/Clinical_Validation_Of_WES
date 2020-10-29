@@ -1,9 +1,9 @@
-##For any an quary Please find the contact detailes on Readme file
+##For any quary, Please find the contact details on the Readme file.
 
 1-Install Reference genome"
     Go to (http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/)
     Download Chr1-22 , X , Y and MT
-    use cat command on lunix teerminal to concatanate all chromosome in the same order.
+    use cat command on lunix terminal to concatenate all chromosomes in the same order.
 2-Install BWA for (http://bio-bwa.sourceforge.net/)
 3-Index the reference genome by :
     bwa index -a bwtsw PathToReferenceGnome 
@@ -11,4 +11,4 @@
 5-Install Picard-tools from (https://broadinstitute.github.io/picard/)
 6-Install GATK from (https://github.com/broadinstitute/gatk/releases)
 7-Install RTG-Tools from (https://github.com/RealTimeGenomics/rtg-tools)
-8-Install latest relase of GIAB Data set from (https://www.nist.gov/programs-projects/genome-bottle)
+8-Install latest release of GIAB Data set from (https://www.nist.gov/programs-projects/genome-bottle)
