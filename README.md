@@ -16,7 +16,7 @@ genotypes asserted in the VCFs under comparison result in the same genomic seque
 positives, false negatives, and true positives.
 
 ##Analytical sensitivity or Limit of detection:
-False positive variants may arise through sequencing and bioinformatics selection/filtering artefacts.
+False positive variants may arise through sequencing and bioinformatics selection/filtering artifacts.
 The number of True Negative can’t exactly calculate but can be estimated to great accuracy. The estimation above 0.1% at most as per 
 Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2wDHcI/m/r_jGaW3ZAAAJ).
 
@@ -39,7 +39,7 @@ Heng Li. (https://groups.google.com/a/realtimegenomics.com/g/rtg-users/c/3JU3j2w
     
     GitHub Account: Momudhish 
   
-Under direct supervission of Dr. Mohammed Bamjboor  
+Under direct supervision of Dr. Mohammed Bamjboor  
     
     Laboratory Consultant as KFMC Molecular Pathology Section
     
